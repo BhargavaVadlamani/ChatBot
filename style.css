@@ -1,0 +1,19 @@
+body {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 350px
+    }
+div.chatArea {
+    height: 400px;  
+    width: 625px;
+    border-style: solid;
+    background-color: powderblue;   
+    overflow-y: scroll
+    
+}
+button.button {
+    background-color: cadetblue;
+    padding: 10px 20px;
+    font-size: 15px    
+}
