@@ -5,16 +5,16 @@ document.getElementById('nameArea').value = '';
 function postChat() {
     var typed = document.getElementById('typeArea').value;
     var chat  = document.getElementById('chatDiv');
-    var name  = document.getElementById('nameArea').value;
+    var name  = document.getElementById('nameArea').value.split(' ');
     var proceed = false;
     
-    proceed = checkNameValidity(name,typed,proceed);
+    proceed = checkNameValidity(name[0],typed,proceed);
     
     if (proceed == true) {
         if (typed === '') {
             ;
         } else {
-            var yourMessage = name + ': ' + typed; 
+            var yourMessage = name[0] + ': ' + typed; 
             renderChatArea(yourMessage); 
         } 
         setTimeout(renderChatArea, 1000, 'BABJI: ' + getAnswer(typed));
